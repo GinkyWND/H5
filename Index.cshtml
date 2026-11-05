@@ -1,0 +1,12 @@
+@model MyBusinessCard.Models.Person
+
+<div class="container mt-5">
+    <div class="card shadow" style="width: 20rem; margin: auto;">
+        <div class="card-body text-center">
+            <h4 class="card-title">@Model.FullName</h4>
+            <p class="text-muted">Возраст: @Model.GetAge()</p>
+            <hr />
+            <p>@Model.Description</p>
+        </div>
+    </div>
+</div>
